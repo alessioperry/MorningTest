@@ -1,0 +1,5 @@
+C:\GitHub\Private\MorningTest\NumbersInWords\bin\Debug\NumbersInWords.dll
+C:\GitHub\Private\MorningTest\NumbersInWords\bin\Debug\NumbersInWords.pdb
+C:\GitHub\Private\MorningTest\NumbersInWords\obj\Debug\NumbersInWords.csprojResolveAssemblyReference.cache
+C:\GitHub\Private\MorningTest\NumbersInWords\obj\Debug\NumbersInWords.dll
+C:\GitHub\Private\MorningTest\NumbersInWords\obj\Debug\NumbersInWords.pdb

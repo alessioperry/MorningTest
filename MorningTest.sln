@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KataNumbersInWords", "KataNumbersInWords", "{1A21CD95-0276-4071-A374-A1C37E370416}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbersInWords", "NumbersInWords\NumbersInWords.csproj", "{481BEEBF-2110-4F74-BF22-495D22B0BBC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{AFE17FD7-D585-4D7C-AFAF-CF0CAF74868C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{481BEEBF-2110-4F74-BF22-495D22B0BBC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{481BEEBF-2110-4F74-BF22-495D22B0BBC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{481BEEBF-2110-4F74-BF22-495D22B0BBC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{481BEEBF-2110-4F74-BF22-495D22B0BBC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFE17FD7-D585-4D7C-AFAF-CF0CAF74868C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFE17FD7-D585-4D7C-AFAF-CF0CAF74868C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFE17FD7-D585-4D7C-AFAF-CF0CAF74868C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFE17FD7-D585-4D7C-AFAF-CF0CAF74868C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{481BEEBF-2110-4F74-BF22-495D22B0BBC7} = {1A21CD95-0276-4071-A374-A1C37E370416}
+		{AFE17FD7-D585-4D7C-AFAF-CF0CAF74868C} = {1A21CD95-0276-4071-A374-A1C37E370416}
+	EndGlobalSection
+EndGlobal
