@@ -17,6 +17,7 @@ namespace Test
                     {0, ""},
                     {1, "One"},
                     {2, "Two"},
+                    {5, "Five"}
                 }
             },
             {
@@ -30,9 +31,9 @@ namespace Test
             {
                 2, new Dictionary<int, string>()
                 {
-                    {1, "Onehundred"},
-                    {2, "twohundred"},
-                    {3, "Threehundred"},
+                    {1, "OneHundred"},
+                    {2, "twoHundred"},
+                    {3, "ThreeHundred"},
                     
                 }
             }
@@ -74,6 +75,12 @@ namespace Test
             Assert.Equal("Twenty", SayTheNumber(20));
         }
 
+        [Fact]
+        public void IsOneHundredFortyFive()
+        {
+            Assert.Equal("OneHundredFortyFive", SayTheNumber(145));
+        }
+
         private string SayTheNumber(Int32 number)
         {
 
@@ -98,8 +105,6 @@ namespace Test
         static IEnumerable<int> convertNumberToList(int num)
         {
             var listOfInts = new List<int>();
-
-            int[] local = { 1, 2, 3 };
 
             while (num > 0)
             {
