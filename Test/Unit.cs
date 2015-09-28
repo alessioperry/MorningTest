@@ -101,17 +101,17 @@ namespace Test
             return result.ToString();
         }
 
-        static Int32[] ConvertNumberToDigitArray(Int32 num)
+        static Int32[] ConvertNumberToDigitArray(Int32 number)
         {
-            var digitArray = new Int32[num.ToString(CultureInfo.InvariantCulture).Length];
+            var digitArray = new Int32[number.ToString(CultureInfo.InvariantCulture).Length];
 
-            Int32 pointer = 0;
+            Int32 position = 0;
 
-            while (num > 0)
+            while (number > 0)
             {
-                digitArray[pointer] = num%10;
-                num = num / 10;
-                pointer++;
+                digitArray[position] = number%10;
+                number = number / 10;
+                position++;
             }
             return digitArray;
         }
