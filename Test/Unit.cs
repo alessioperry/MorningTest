@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using Xunit;
@@ -32,7 +33,7 @@ namespace Test
                 2, new Dictionary<int, string>()
                 {
                     {1, "OneHundred"},
-                    {2, "twoHundred"},
+                    {2, "TwoHundred"},
                     {3, "ThreeHundred"},
                     
                 }
@@ -87,36 +88,33 @@ namespace Test
             if (number == 0)
                 return "Zero";
 
-            var numberTolist = convertNumberToList(number);
+            var digitArray = ConvertNumberToDigitArray(number);
 
             var result = new StringBuilder();
-
-            var enumerable = numberTolist as int[] ?? numberTolist.ToArray();
-
-            for (var count = 0; count <= enumerable.Count() - 1; count++)
+            
+            for (var count = 0; count <= digitArray.Count() - 1; count++)
             {
                var tempDictionary = _storage[count];
-               result.Insert(0, tempDictionary[enumerable[count]]);
+               result.Insert(0, tempDictionary[digitArray[count]]);
             }
 
             return result.ToString();
         }
 
-        static IEnumerable<int> convertNumberToList(int num)
+        static Int32[] ConvertNumberToDigitArray(Int32 num)
         {
-            var listOfInts = new List<int>();
+            var digitArray = new Int32[num.ToString(CultureInfo.InvariantCulture).Length];
+
+            Int32 pointer = 0;
 
             while (num > 0)
             {
-                listOfInts.Add(num % 10);
+                digitArray[pointer] = num%10;
                 num = num / 10;
+                pointer++;
             }
-
-            return listOfInts;
+            return digitArray;
         }
     }
 }
-
-//745.00 $ (amount in numbers)
-//seven hundred and fourty five dollars (amount in words)
 
